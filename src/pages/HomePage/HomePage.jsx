@@ -19,14 +19,14 @@ const HomePage = ({ config }) => {
         {t(site.description)}
       </Typography>
       <Button variant="contained" color="primary" component={Link} to="/portfolio">
-        Ver Projetos
+        {t('view_projects')}
       </Button>
        {/* Seção Sobre */}
        <Typography variant="h4" gutterBottom style={{ marginTop: '40px' }}>
-        Sobre Mim
+       {t('about_me')}
       </Typography>
       <About 
-        description="Olá! Sou um desenvolvedor React.js apaixonado por criar interfaces incríveis."
+        description={t('about_description')}
         avatar="/images/avatar.png"
       />
     </Container>
