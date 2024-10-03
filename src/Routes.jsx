@@ -40,7 +40,7 @@ const App = () => {
       <Header 
           navLinks={site.navLinks} 
           title={site.title} 
-          socialLinks={site.socialLinks} 
+          socialLinks={site.socialLinks}
         />
          <Suspense fallback={
           <Box display="flex" justifyContent="center" alignItems="center" height="100vh">

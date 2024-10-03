@@ -6,13 +6,13 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import HomeIcon from '@mui/icons-material/Home';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { IconButton } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageSwitcher from 'components/LanguageSwitch/LanguageSwitch';
+import { Brightness1Outlined, DarkModeOutlined } from '@mui/icons-material';
 
-const Header = ({ navLinks, title, socialLinks }) => {
+const Header = ({ navLinks, title, socialLinks, toggleTheme, currentTheme }) => {
   const renderSocialIcon = (iconName) => {
     switch (iconName) {
       case 'LinkedInIcon':
@@ -58,6 +58,10 @@ const Header = ({ navLinks, title, socialLinks }) => {
             </IconButton>
           ))}
         </div>
+        <LanguageSwitcher />
+        <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit" aria-label="Trocar Tema">
+          {currentTheme === 'dark' ? <Brightness1Outlined /> : <DarkModeOutlined />}
+        </IconButton>
       </Toolbar>
     </AppBar>
   );

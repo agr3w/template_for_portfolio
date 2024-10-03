@@ -1,8 +1,8 @@
 {
     "site": {
-      "title": "Meu Portfólio",
+      "title": "home_title",
       "author": "Seu Nome",
-      "description": "Desenvolvedor React.js apaixonado por criar interfaces incríveis e funcionais.",
+      "description": "description",
       "avatar": "/images/avatar.png",
       "navLinks": [
         { "name": "Início", "path": "/" },
@@ -15,7 +15,24 @@
       "socialLinks": [
         { "name": "LinkedIn", "url": "https://www.linkedin.com/in/seu-usuario", "icon": "LinkedInIcon" },
         { "name": "GitHub", "url": "https://github.com/seu-usuario", "icon": "GitHubIcon" } 
-    ]
+      ],
+      "theme": {
+      "palette": {
+        "primary": {
+          "main": "#007bff"
+        },
+        "secondary": {
+          "main": "#ff4081"
+        },
+        "mode": "light"
+      }
+      },
+      "typography": {
+        "fontFamily": "'Roboto', sans-serif",
+        "h1": {
+          "fontSize": "2.4rem"
+        }      
+      }
     },
     "projects": [
       {

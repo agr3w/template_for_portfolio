@@ -2,19 +2,21 @@
 import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import styles from './Home.module.css';
 import About from 'components/About/About';
 
 const HomePage = ({ config }) => {
   const { site } = config;
+  const { t } = useTranslation();
 
   return (
     <Container className={styles.home}>
       <Typography variant="h2" gutterBottom>
-        Bem-vindo ao {site.title}
+        {t(site.title)}
       </Typography>
       <Typography variant="h5" gutterBottom>
-        {site.description}
+        {t(site.description)}
       </Typography>
       <Button variant="contained" color="primary" component={Link} to="/portfolio">
         Ver Projetos
