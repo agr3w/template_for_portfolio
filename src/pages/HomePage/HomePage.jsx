@@ -6,27 +6,26 @@ import { useTranslation } from 'react-i18next';
 import styles from './Home.module.css';
 import About from 'components/About/About';
 
-const HomePage = ({ config }) => {
-  const { site } = config;
+const HomePage = () => {
   const { t } = useTranslation();
 
   return (
     <Container className={styles.home}>
       <Typography variant="h2" gutterBottom>
-        {t(site.title)}
+        {t('HomePage.welcome')}
       </Typography>
       <Typography variant="h5" gutterBottom>
-        {t(site.description)}
+        {t('HomePage.description')}
       </Typography>
       <Button variant="contained" color="primary" component={Link} to="/portfolio">
-        {t('view_projects')}
+        {t('HomePage.view_projects')}
       </Button>
        {/* Seção Sobre */}
        <Typography variant="h4" gutterBottom style={{ marginTop: '40px' }}>
-       {t('about_me')}
+       {t('HomePage.about_me')}
       </Typography>
       <About 
-        description={t('about_description')}
+        description={t('HomePage.about_description')}
         avatar="/images/avatar.png"
       />
     </Container>

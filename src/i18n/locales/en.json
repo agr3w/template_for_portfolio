@@ -1,9 +1,30 @@
 {
-    "welcome": "Welcome to my Portfolio",
-    "description": "React.js developer passionate about creating amazing and functional interfaces.",
-    "view_projects": "View Projects",
-    "home_title": "Welcome to My Portfolio",
-    "about_description": "React.js developer passionate about creating amazing interfaces.",
-    "about_me": "About me"
+    "Header":{
+        "title": "My Portfolio",
+        "home": "Home",
+        "portfolio": "Portfólio",
+        "about": "About",
+        "contact": "Contact",
+        "testimonials": "Testimonials",
+        "skills": "Skills"
+    },
+
+    "Routes": {
+        "home": "/",
+        "portfolio": "/portfolio",
+        "about": "/sobre",
+        "contact": "/contato",
+        "testimonials": "/testemunhos",
+        "skills": "/habilidades"
+      },
+
+    "HomePage": {
+        "welcome": "Welcome to my Portfolio",
+        "description": "React.js developer passionate about creating amazing and functional interfaces.",
+        "view_projects": "View Projects",
+        "home_title": "Welcome to My Portfolio",
+        "about_description": "React.js developer passionate about creating amazing interfaces.",
+        "about_me": "About me"
+    }
   }
   

@@ -1,6 +1,6 @@
 // src/pages/Contact.jsx
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Box, Grid } from '@mui/material';
+import { Container, Typography, TextField, Button, Box } from '@mui/material';
 import styles from './Contact.module.css';
 
 const Contact = ({ contact }) => {

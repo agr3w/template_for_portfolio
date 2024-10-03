@@ -1,9 +1,9 @@
 // src/pages/Testemunhos.jsx
 import React from 'react';
 import { Container, Typography, Grid, Paper } from '@mui/material';
-import styles from './TetstimonialsPage.module.css';
+import styles from './TestimonialsPage.module.css';
 
-const TetstimonialsPage = ({ testimonials }) => {
+const TestimonialsPage = ({ testimonials }) => {
   return (
     <Container className={styles.testemunhos}>
       <Typography variant="h4" gutterBottom>
@@ -27,4 +27,4 @@ const TetstimonialsPage = ({ testimonials }) => {
   );
 };
 
-export default TetstimonialsPage;
+export default TestimonialsPage;

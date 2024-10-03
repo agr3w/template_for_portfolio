@@ -11,8 +11,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageSwitcher from 'components/LanguageSwitch/LanguageSwitch';
 import { Brightness1Outlined, DarkModeOutlined } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
 
 const Header = ({ navLinks, title, socialLinks, toggleTheme, currentTheme }) => {
+  const { t } = useTranslation();
   const renderSocialIcon = (iconName) => {
     switch (iconName) {
       case 'LinkedInIcon':
@@ -29,7 +31,7 @@ const Header = ({ navLinks, title, socialLinks, toggleTheme, currentTheme }) => 
     <AppBar position="static" className={styles.appBar}>
       <Toolbar className={styles.toolbar}>
         <Typography variant="h6" component="div" className={styles.title}>
-          {title}
+          {t('Header.title')}
         </Typography>
         <div className={styles.navLinks}>
           {navLinks.map((link, index) => (
@@ -37,10 +39,10 @@ const Header = ({ navLinks, title, socialLinks, toggleTheme, currentTheme }) => 
               key={index}
               color="inherit"
               component={Link}
-              to={link.path}
+              to= {t(`Routes.${link.name}`)}
               className={styles.navButton}
             >
-              {link.name}
+              {t(`Header.${link.name}`)}
             </Button>
           ))}
         </div>
