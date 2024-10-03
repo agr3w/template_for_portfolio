@@ -1,9 +1,9 @@
 // src/pages/Contact.jsx
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Box } from '@mui/material';
+import { Container, Typography, TextField, Button, Box, Grid } from '@mui/material';
 import styles from './Contact.module.css';
 
-const Contact = () => {
+const Contact = ({ contact }) => {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -17,7 +17,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode implementar o envio do formulário
+    // Aqui você pode implementar o envio do formulário, como integração com uma API
     console.log(formData);
     // Resetar o formulário
     setFormData({ nome: '', email: '', mensagem: '' });
@@ -71,6 +71,20 @@ const Contact = () => {
           Enviar
         </Button>
       </Box>
+      {/* <Grid container spacing={2} sx={{ mt: 4 }}>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Email</Typography>
+          <Typography>{contact.email}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Telefone</Typography>
+          <Typography>{contact.phone}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Endereço</Typography>
+          <Typography>{contact.address}</Typography>
+        </Grid>
+      </Grid> */}
     </Container>
   );
 };

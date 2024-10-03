@@ -1,18 +1,29 @@
 /* src/components/Header/Header.module.css */
 .appBar {
-    background-color: #333 !important; /* Sobrescreve a cor padrão do AppBar */
-  }
-  
-  .toolbar {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .title {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .navButton {
-    margin-left: 10px;
-  }
-  
+  background-color: #333 !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.navButton {
+  margin-left: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
