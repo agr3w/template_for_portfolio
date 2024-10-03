@@ -4,7 +4,7 @@ import { Container, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <Container className={styles.home}>
       <Typography variant="h2" gutterBottom>
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

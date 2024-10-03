@@ -4,8 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Header from 'components/Header/Header';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import HomePage from './pages/HomePage';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+
 
 // Criando um tema personalizado com MUI
 const theme = createTheme({
@@ -32,7 +36,7 @@ const App = () => {
       <Router>
         <Header navLinks={navLinks} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contato" element={<Contact />} />
           {/* Adicione mais rotas conforme necessário */}

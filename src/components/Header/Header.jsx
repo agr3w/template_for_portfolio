@@ -6,6 +6,8 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material/Home';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const Header = ({ navLinks }) => {
   return (
@@ -17,14 +19,13 @@ const Header = ({ navLinks }) => {
         <div>
           {navLinks.map((link, index) => (
             <Button
-              key={index}
-              color="inherit"
-              component={Link}
-              to={link.path}
-              className={styles.navButton}
-            >
-              {link.name}
-            </Button>
+            color="inherit"
+            component={Link}
+            to={link.path}
+            startIcon={index === 0 ? <HomeIcon /> : <ContactMailIcon />}
+          >
+            {link.name}
+          </Button>
           ))}
         </div>
       </Toolbar>
