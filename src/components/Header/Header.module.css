@@ -1,0 +1,18 @@
+/* src/components/Header/Header.module.css */
+.appBar {
+    background-color: #333 !important; /* Sobrescreve a cor padrão do AppBar */
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .navButton {
+    margin-left: 10px;
+  }
+  
