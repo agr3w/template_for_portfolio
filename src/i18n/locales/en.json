@@ -1,30 +1,67 @@
 {
-    "Header":{
-        "title": "My Portfolio",
-        "home": "Home",
-        "portfolio": "Portfólio",
-        "about": "About",
-        "contact": "Contact",
-        "testimonials": "Testimonials",
-        "skills": "Skills"
+  "Header": {
+    "title": "My Portfolio",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "testimonials": "Testimonials",
+    "skills": "Skills"
+  },
+
+  "Routes": {
+    "home": "/",
+    "portfolio": "/portfolio",
+    "about": "/sobre",
+    "contact": "/contato",
+    "testimonials": "/testemunhos",
+    "skills": "/habilidades"
+  },
+
+  "HomePage": {
+    "welcome": "Welcome to my Portfolio",
+    "description": "React.js developer passionate about creating amazing and functional interfaces.",
+    "view_projects": "View Projects",
+    "home_title": "Welcome to My Portfolio",
+    "about_description": "React.js developer passionate about creating amazing interfaces.",
+    "about_me": "About me"
+  },
+
+  "Projects": {
+    "name_page": "Projects",
+    "see_project": "see project",
+    "project 1": "Project 1",
+    "description project 1": "Detailed project description 1.",
+    "project 2": "Project 2",
+    "description project 2": "Detailed project description 2."
+  },
+  
+  "About": {
+    "name_page": "About me",
+    "description": "Description about me."
+  },
+
+  "Contact": {
+    "name_page": "Contact",
+    "label_name": "Name",
+    "label_message": "Message",
+    "send": "Send"
+  },
+
+  "testimonials": 
+    {
+      "name_page": "Testimonials",
+      "quote 1": "Excellent work! Exceeded my expectations.",
+      "author 1": "Customer A",
+      "quote 2": "Very professional and dedicated. I recommend it!",
+      "author 2": "Customer B"
     },
 
-    "Routes": {
-        "home": "/",
-        "portfolio": "/portfolio",
-        "about": "/sobre",
-        "contact": "/contato",
-        "testimonials": "/testemunhos",
-        "skills": "/habilidades"
-      },
+  "Skills": {
+    "name_page": "Skills"
+  },
 
-    "HomePage": {
-        "welcome": "Welcome to my Portfolio",
-        "description": "React.js developer passionate about creating amazing and functional interfaces.",
-        "view_projects": "View Projects",
-        "home_title": "Welcome to My Portfolio",
-        "about_description": "React.js developer passionate about creating amazing interfaces.",
-        "about_me": "About me"
-    }
+  "Footer": {
+    "Rigths": "All rights reserved"
   }
-  
+}

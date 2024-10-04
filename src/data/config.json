@@ -1,21 +1,29 @@
 {
-    "site": {
-      "author": "Seu Nome",
-      "description": "description",
-      "avatar": "/images/avatar.png",
-      "navLinks": [
-        { "name": "home", "path": "/" },
-        { "name": "portfolio", "path": "/portfolio" },
-        { "name": "about", "path": "/sobre" },
-        { "name": "contact", "path": "/contato" },
-        { "name": "testimonials", "path": "/testemunhos" },
-        { "name": "skills", "path": "/habilidades" }
+  "site": {
+    "author": "Name",
+    "description": "description",
+    "avatar": "/images/avatar.png",
+    "navLinks": [
+      { "name": "home", "path": "/" },
+      { "name": "portfolio", "path": "/portfolio" },
+      { "name": "about", "path": "/sobre" },
+      { "name": "contact", "path": "/contato" },
+      { "name": "testimonials", "path": "/testemunhos" },
+      { "name": "skills", "path": "/habilidades" }
     ],
-      "socialLinks": [
-        { "name": "LinkedIn", "url": "https://www.linkedin.com/in/seu-usuario", "icon": "LinkedInIcon" },
-        { "name": "GitHub", "url": "https://github.com/seu-usuario", "icon": "GitHubIcon" } 
-      ],
-      "theme": {
+    "socialLinks": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/seu-usuario",
+        "icon": "LinkedInIcon"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/seu-usuario",
+        "icon": "GitHubIcon"
+      }
+    ],
+    "theme": {
       "palette": {
         "primary": {
           "main": "#007bff"
@@ -25,49 +33,48 @@
         },
         "mode": "light"
       }
-      },
-      "typography": {
-        "fontFamily": "'Roboto', sans-serif",
-        "h1": {
-          "fontSize": "2.4rem"
-        }      
-      }
     },
-    "projects": [
-      {
-        "title": "Projeto 1",
-        "description": "Descrição detalhada do projeto 1.",
-        "image": "/images/projeto1.png",
-        "link": "https://github.com/seu-usuario/projeto1"
-      },
-      {
-        "title": "Projeto 2",
-        "description": "Descrição detalhada do projeto 2.",
-        "image": "/images/projeto2.png",
-        "link": "https://github.com/seu-usuario/projeto2"
+    "typography": {
+      "fontFamily": "'Roboto', sans-serif",
+      "h1": {
+        "fontSize": "2.4rem"
       }
-      
-    ],
-    "testimonials": [
-      {
-        "quote": "Excelente trabalho! Superou minhas expectativas.",
-        "author": "Cliente A"
-      },
-      {
-        "quote": "Muito profissional e dedicado. Recomendo!",
-        "author": "Cliente B"
-      }
-    ],
-    "contact": {
-      "email": "seu-email@exemplo.com",
-      "phone": "+55 11 91234-5678",
-      "address": "Rua Exemplo, 123, Cidade, Estado"
+    }
+  },
+  "projects": [
+    {
+      "title": "project 1",
+      "description": "description project 1",
+      "image": "/images/projeto1.png",
+      "link": "https://github.com/seu-usuario/projeto1"
     },
-    "skills": [
+    {
+      "title": "project 2",
+      "description": "description project 2",
+      "image": "/images/projeto2.png",
+      "link": "https://github.com/seu-usuario/projeto2"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "quote": "quote 1",
+      "author": "author 1"
+    },
+    {
+      "quote": "quote 2",
+      "author": "author 2"
+    }
+  ],
+  "contact": {
+    "email": "seu-email@exemplo.com",
+    "phone": "+55 11 91234-5678",
+    "address": "Rua Exemplo, 123, Cidade, Estado"
+  },
+  "skills": [
     { "name": "React.js", "level": "Avançado" },
     { "name": "JavaScript", "level": "Avançado" },
     { "name": "CSS3", "level": "Intermediário" },
     { "name": "Node.js", "level": "Intermediário" }
   ]
-  }
-  
+}

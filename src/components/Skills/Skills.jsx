@@ -2,12 +2,15 @@
 import React from 'react';
 import { Typography, Grid, LinearProgress, Box } from '@mui/material';
 import styles from './Skills.module.css';
+import { useTranslation } from 'react-i18next';
 
 const Skills = ({ skills }) => {
+  const { t } = useTranslation();
+
   return (
     <Box className={styles.skills}>
       <Typography variant="h4" gutterBottom>
-        Habilidades
+        {t('Skills.name_page')}
       </Typography>
       <Grid container spacing={4}>
         {skills.map((skill, index) => (

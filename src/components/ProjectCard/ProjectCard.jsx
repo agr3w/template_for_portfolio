@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
+import { t } from 'i18next';
 
 const ProjectCard = ({ title, description, image, link }) => {
   return (
@@ -27,7 +28,7 @@ const ProjectCard = ({ title, description, image, link }) => {
       </CardContent>
       <CardActions>
         <Button size="small" color="primary" href={link} target="_blank" rel="noopener noreferrer">
-          Ver Projeto
+          {t('Projects.see_project')}
         </Button>
       </CardActions>
     </Card>

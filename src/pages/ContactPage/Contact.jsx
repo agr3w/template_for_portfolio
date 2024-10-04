@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import { Container, Typography, TextField, Button, Box } from '@mui/material';
 import styles from './Contact.module.css';
+import { useTranslation } from 'react-i18next';
 
 const Contact = ({ contact }) => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -26,7 +28,7 @@ const Contact = ({ contact }) => {
   return (
     <Container className={styles.contact}>
       <Typography variant="h4" gutterBottom>
-        Contato
+      {t('Contact.name_page')}
       </Typography>
       <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
         <TextField
@@ -34,7 +36,7 @@ const Contact = ({ contact }) => {
           required
           fullWidth
           id="nome"
-          label="Nome"
+          label={t('Contact.label_name')}
           name="nome"
           value={formData.nome}
           onChange={handleChange}
@@ -55,7 +57,7 @@ const Contact = ({ contact }) => {
           required
           fullWidth
           id="mensagem"
-          label="Mensagem"
+          label={t('Contact.label_message')}
           name="mensagem"
           multiline
           rows={4}
@@ -68,7 +70,7 @@ const Contact = ({ contact }) => {
           color="primary"
           sx={{ mt: 3 }}
         >
-          Enviar
+          {t('Contact.send')}
         </Button>
       </Box>
       {/* <Grid container spacing={2} sx={{ mt: 4 }}>
